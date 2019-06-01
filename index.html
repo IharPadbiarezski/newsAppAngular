@@ -1,0 +1,29 @@
+<!doctype html>
+<html ng-app="newsApp">
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
+    <script src="js/model.js"></script>
+    <script src="js/app.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+    <nav class="navbar navbar-light bg-light mb-3">
+        <a class="navbar-brand p-3" href="#">ITVDN News</a>
+    </nav>
+    <div ng-controller="newsAppController" class="container">
+
+        <div class="panel-body">
+            <article class="bg-light p-3 mb-3" ng-repeat="news in newsAll">
+                <h2>{{news.title}}</h2>
+                <p>{{news.published}}</p>
+                <p>{{news.description}}</p>
+                <a href="{{news.link}}" class="btn btn-primary">Читать дальше</a>
+            </article>
+        </div>
+    </div>
+    
+    <footer class="panel-footer">
+        <a href="http://itvdn.com/ru/news">Все новости</a>
+    </footer>
+  </body>
+</html>
