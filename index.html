@@ -11,17 +11,14 @@
         <a class="navbar-brand p-3" href="#">ITVDN News</a>
     </nav>
     <div ng-controller="newsAppController" class="container">
-
-        <div class="panel-body">
             <article class="bg-light p-3 mb-3" ng-repeat="news in newsAll">
                 <h2>{{news.title}}</h2>
                 <p>{{news.published}}</p>
                 <p>{{news.description}}</p>
                 <a href="{{news.link}}" class="btn btn-primary">Читать дальше</a>
             </article>
-        </div>
     </div>
-    
+
     <footer class="panel-footer">
         <a href="http://itvdn.com/ru/news">Все новости</a>
     </footer>
