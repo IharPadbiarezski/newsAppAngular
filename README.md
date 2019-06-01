@@ -1,0 +1,2 @@
+# newsAppAngular
+Another Angular project
