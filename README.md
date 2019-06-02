@@ -1,4 +1,4 @@
-# newsAppAngular
+# newsAppAngularJs
 Another Angular project
 
--Link: https://iharpadbiarezski.github.io/newsAppAngular/
+-Link: https://iharpadbiarezski.github.io/newsAppAngularJs/
